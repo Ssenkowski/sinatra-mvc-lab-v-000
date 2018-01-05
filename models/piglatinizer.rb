@@ -27,6 +27,7 @@ class PigLatinizer
     else
       final_phrase = initial_phrase.capitalize
       final_phrase
+      binding.pry
     end
   end
 
