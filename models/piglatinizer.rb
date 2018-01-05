@@ -24,9 +24,12 @@ class PigLatinizer
     initial_phrase = phrase.downcase.split(" ").map {|word| piglatinize(word)}.join(" ")
     if initial_phrase[0][0] == "i"
       initial_phrase
-    else
+    elsif initial_phrase[0][0] == "o"
       final_phrase = initial_phrase.capitalize
       final_phrase
+    else 
+      final_phrase = initial_phrase.capitalize
+      final_phrase.split[0].gsub!("Ehay", "eHay")
       binding.pry
     end
   end
