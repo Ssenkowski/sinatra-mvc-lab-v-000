@@ -21,7 +21,7 @@ class PigLatinizer
   end
 
   def to_pig_latin(phrase)
-    initial_phrase = phrase.split(" ").map {|word| piglatinize(word)}.join(" ")
+    initial_phrase = phrase.downcase.split(" ").map {|word| piglatinize(word)}.join(" ")
     if initial_phrase.downcase[0][0] == "i"
       initial_phrase
     elsif initial_phrase.downcase[0][0] == "o"
