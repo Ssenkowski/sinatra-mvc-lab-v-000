@@ -25,7 +25,7 @@ class PigLatinizer
       phrase.downcase.split(" ").map {|word| piglatinize(word)}.join(" ")
     else
       initial_phrase = phrase.downcase.split(" ").map {|word| piglatinize(word)}.join(" ")
-      initial_phrase[1].capitalize
+      initial_phrase.capitalize
     end
   end
 
