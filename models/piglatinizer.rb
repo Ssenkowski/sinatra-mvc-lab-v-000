@@ -25,6 +25,8 @@ class PigLatinizer
     if initial_phrase[0][0] == %w[a e i o u A E I O U]
       initial_phrase
     elsif
+
+    else
       final_phrase = initial_phrase.capitalize
       final_phrase
       binding.pry
