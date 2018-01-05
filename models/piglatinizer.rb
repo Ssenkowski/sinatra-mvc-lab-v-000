@@ -22,13 +22,11 @@ class PigLatinizer
 
   def to_pig_latin(phrase)
     if phrase == phrase.downcase
-      
+      phrase.downcase.split(" ").map {|word| piglatinize(word)}.join(" ")
     else
-      
+      initial_phrase = phrase.downcase.split(" ").map {|word| piglatinize(word)}.join(" ")
+      initial_phrase.capitalize
     end
-    initial_phrase = phrase.downcase.split(" ").map {|word| piglatinize(word)}.join(" ")
-    initial_phrase.capitalize
-  
   end
 
 end
