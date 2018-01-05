@@ -28,8 +28,6 @@ class PigLatinizer
       final_phrase = initial_phrase.capitalize
       final_phrase
     end
-    
-    binding.pry
   end
 
 end
