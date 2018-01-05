@@ -27,10 +27,9 @@ class PigLatinizer
     elsif initial_phrase[0][0] == "o"
       final_phrase = initial_phrase.capitalize
       final_phrase
-    else 
+    else
       final_phrase = initial_phrase.capitalize
       final_phrase.split[0].gsub!("Ehay", "eHay")
-      binding.pry
     end
   end
 
