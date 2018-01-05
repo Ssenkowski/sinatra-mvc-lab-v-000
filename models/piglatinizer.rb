@@ -21,7 +21,7 @@ class PigLatinizer
   end
 
   def to_pig_latin(phrase)
-    phrase.split(" ").map {|word| piglatinize(word)}.join(" ")
+    lowercase_phrase = phrase.downcasephrase.split(" ").map {|word| piglatinize(word)}.join(" ")
   end
 
 end
