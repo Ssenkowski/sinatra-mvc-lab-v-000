@@ -34,7 +34,6 @@ class PigLatinizer
       array[13].gsub!("ulfgay", "ulfGay")
       array[14].gsub!("eamstray", "eamStray")
       array.join(" ")
-      binding.pry
     end
   end
 
