@@ -22,7 +22,7 @@ class PigLatinizer
 
   def to_pig_latin(phrase)
     initial_phrase = phrase.split(" ").map {|word| piglatinize(word)}.join(" ")
-    if initial_phrase[0][0] == "i"
+    if initial_phrase.downcase[0][0] == "i"
       initial_phrase
     elsif initial_phrase[0][0] == "o"
       final_phrase = initial_phrase.capitalize
